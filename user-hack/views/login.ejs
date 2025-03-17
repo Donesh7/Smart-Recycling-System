@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecycleHub - Join the Movement</title>
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <div class="container">
+        <div id="imageSection" class="image-section">
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=600&h=800"
+              alt="Plastic bottles being recycled"
+            />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="info-card">
+            <h2>Join the Recycling Revolution</h2>
+            <p>
+              Every bottle recycled is a step towards a cleaner planet. Your
+              small action makes a big difference.
+            </p>
+            <div class="features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <span class="icon">💧</span>
+                </div>
+                <p>Save Water</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <span class="icon">♻️</span>
+                </div>
+                <p>Reduce Waste</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-container">
+          <div id="headerSection" class="header">
+            <div class="header-content">
+              <span class="header-icon">♻️</span>
+              <h1 id="headerTitle">Welcome Back</h1>
+            </div>
+            <p>Making recycling a daily habit</p>
+          </div>
+
+          <div id="formSection" class="form-section">
+            <!-- Login Form -->
+            <form id="loginForm" action="/get-user" method="POST">
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <div class="input-container">
+                  <span class="input-icon">📧</span>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <div class="input-container">
+                  <span class="input-icon">🔒</span>
+                  <input
+                    type="text"
+                    name="Password"
+                    class="form-input"
+                    placeholder="••••••••"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span id="submitButtonText">Sign In</span>
+                <span>➔</span>
+              </button>
+            </form>
+
+            <!-- Signup Form -->
+            <form
+              id="signupForm"
+              style="display: none"
+              action="/post-user"
+              method="POST"
+            >
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <div class="input-container">
+                  <span class="input-icon">👤</span>
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="name"
+                    placeholder="John Doe"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <div class="input-container">
+                  <span class="input-icon">📧</span>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Mobile Number</label>
+                <div class="input-container">
+                  <span class="input-icon">🔒</span>
+                  <input
+                    type="number"
+                    name="mobile"
+                    class="form-input"
+                    placeholder="••••••••"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span id="submitButtonText">Sign Up</span>
+                <span>➔</span>
+              </button>
+            </form>
+
+            <button id="switchButton" class="switch-button">
+              Don't have an account? Sign up
+            </button>
+            <div class="divider">
+              <span>Join the recycling movement</span>
+            </div>
+
+            <p class="footer-text">
+              By signing up, you pledge to contribute to a sustainable future
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

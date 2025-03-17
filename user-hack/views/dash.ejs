@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoStore</title>
+    <link rel="stylesheet" href="dash.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+            />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+          <span>EcoStore</span>
+        </div>
+        <div class="nav-items">
+          <div class="points"><span id="pointsDisplay">1000</span> points</div>
+          <button id="showTransactions" class="history-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 3v5h5" />
+              <path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" />
+            </svg>
+            History
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="storePage" class="page active">
+          <h1>Eco-Friendly Products</h1>
+          <div class="products-grid" id="productsContainer">
+            <!-- Products will be inserted here by JavaScript -->
+          </div>
+        </section>
+
+        <section id="transactionsPage" class="page">
+          <h1>Transaction History</h1>
+          <div class="transactions-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Points</th>
+                </tr>
+              </thead>
+              <tbody id="transactionsBody">
+                <!-- Transactions will be inserted here by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <button id="backToStore" class="back-btn">Back to Store</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="dash.js"></script>
+  </body>
+</html>

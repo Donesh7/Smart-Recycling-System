@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTracker Dashboard</title>
+    <link rel="stylesheet" href="ds-main.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Navigation -->
+      <nav>
+        <div class="nav-container">
+          <div class="nav-logo">
+            <i data-lucide="recycle" class="logo-icon"></i>
+            <span>EcoTracker</span>
+          </div>
+          <a href="/dash" class="store-button">
+            <i data-lucide="shopping-bag" class="store-icon"></i>
+            Eco Store
+          </a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Welcome Section -->
+        <div class="welcome-card">
+          <h1>Welcome back, <span id="userName"><%=user.name%></span>!</h1>
+          <p>Keep up the great work in making our planet greener.</p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <!-- Current Level -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <i data-lucide="trophy" class="trophy-icon"></i>
+              <span>Current Level</span>
+            </div>
+            <h2 id="currentLevel">Bronze</h2>
+            <p id="nextLevel">Next: Silver</p>
+          </div>
+
+          <!-- Bottles Recycled -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <i data-lucide="recycle" class="recycle-icon"></i>
+              <span>Bottles Recycled</span>
+            </div>
+            <h2 id="bottlesRecycled">750</h2>
+            <p>Monthly Goal: <span id="monthlyGoal">1000</span></p>
+          </div>
+
+          <!-- Total Points -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="points-icon">P</div>
+              <span>Total Points</span>
+            </div>
+            <h2 id="totalPoints">2500</h2>
+            <p>Lifetime earnings</p>
+          </div>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-card">
+          <h2>Progress to Next Level</h2>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="progress-labels">
+            <span id="progressCurrentLevel">Bronze</span>
+            <span id="progressPercent">75% Complete</span>
+            <span id="progressNextLevel">Silver</span>
+          </div>
+        </div>
+
+        <!-- Achievement Badges -->
+        <div class="achievements-section">
+          <h2>Your Achievements</h2>
+          <div class="badges-grid" id="badgesGrid">
+            <!-- Badges will be inserted by JavaScript -->
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="ds-main.js"></script>
+  </body>
+</html>

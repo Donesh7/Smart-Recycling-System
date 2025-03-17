@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoRewards - Plastic Recycling Rewards</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Navigation -->
+      <nav id="main-nav">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-recycle"
+          >
+            <path
+              d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"
+            ></path>
+            <path
+              d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"
+            ></path>
+            <path d="m14 16-3 3 3 3"></path>
+            <path d="M8.293 13.596 4.5 9.497l3.793-4.099"></path>
+            <path d="m17.48 4.143 2.02 3.496h-6.084l2.02 3.496"></path>
+            <path
+              d="M17.957 11.062A6.15 6.15 0 0 0 18 10a6 6 0 0 0-6-6c-1.913 0-3.618.9-4.712 2.296"
+            ></path>
+          </svg>
+          <span>EcoRewards</span>
+        </div>
+        <div class="nav-links">
+          <a href="/home" class="active">Home</a>
+          <!-- <a href="#dashboard">Dashboard</a>
+          <a href="#eco-store">Eco-Store</a> -->
+          <a class="btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-moon"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+          <!-- <button id="login-btn" class="btn btn-outline">Login</button>
+          <button id="signup-btn" class="btn btn-primary">Sign Up</button> -->
+          <div id="user-profile" class="hidden">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+              alt="User Profile"
+            />
+          </div>
+        </div>
+        <button id="mobile-menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden">
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#eco-store">Eco-Store</a>
+        <a href="#contact">Contact</a>
+        <div class="mobile-actions">
+          <button id="mobile-login-btn" class="btn btn-outline">Login</button>
+          <button id="mobile-signup-btn" class="btn btn-primary">
+            Sign Up
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Home/Landing Page -->
+        <section id="home" class="section active">
+          <div class="hero">
+            <div class="hero-content">
+              <h1>Turn Your Plastic Bottles Into Rewards</h1>
+              <p>
+                Join our recycling program and earn points for every plastic
+                bottle you recycle. Redeem your points for eco-friendly products
+                and help save our planet.
+              </p>
+              <a
+                href="/login"
+                id="start-recycling"
+                class="btn btn-primary btn-large"
+              >
+                Start Recycling
+              </a>
+            </div>
+            <div class="hero-image">
+              <img src="recycle.jpg" alt="Plastic Bottle Recycling" />
+            </div>
+          </div>
+
+          <div class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+              <div class="step">
+                <div class="step-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-user-plus"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <line x1="19" x2="19" y1="8" y2="14"></line>
+                    <line x1="22" x2="16" y1="11" y2="11"></line>
+                  </svg>
+                </div>
+                <h3>Sign Up</h3>
+                <p>
+                  Create your account to start tracking your recycling efforts.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-scan-barcode"
+                  >
+                    <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                    <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+                    <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+                    <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+                    <path d="M8 7v10"></path>
+                    <path d="M12 7v10"></path>
+                    <path d="M17 7v10"></path>
+                  </svg>
+                </div>
+                <h3>Scan Bottles</h3>
+                <p>Scan your plastic bottles using our app to earn points.</p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-trophy"
+                  >
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                    <path d="M4 22h16"></path>
+                    <path
+                      d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
+                    ></path>
+                    <path
+                      d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
+                    ></path>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                  </svg>
+                </div>
+                <h3>Earn Rewards</h3>
+                <p>
+                  Collect points and earn trophies as you recycle more bottles.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-shopping-bag"
+                  >
+                    <path
+                      d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+                    ></path>
+                    <path d="M3 6h18"></path>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                </div>
+                <h3>Redeem Points</h3>
+                <p>
+                  Use your points to get eco-friendly products from our store.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h2>Your Impact Matters</h2>
+            <div class="impact-stats">
+              <div class="stat">
+                <h3>500K+</h3>
+                <p>Bottles Recycled</p>
+              </div>
+              <div class="stat">
+                <h3>10K+</h3>
+                <p>Active Users</p>
+              </div>
+              <div class="stat">
+                <h3>25+</h3>
+                <p>Tons of Plastic Saved</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="why-recycle">
+          <h2>Why Recycle with Us?</h2>
+          <div class="recycle-benefits">
+            <div class="benefit">
+              <span class="benefit-icon">✅</span>
+              <h3>Reduce Pollution</h3>
+              <p>Keep plastic out of landfills and oceans.</p>
+            </div>
+            <div class="benefit">
+              <span class="benefit-icon">✅</span>
+              <h3>Get Rewarded</h3>
+              <p>Turn waste into valuable points.</p>
+            </div>
+            <div class="benefit">
+              <span class="benefit-icon">✅</span>
+              <h3>Support Sustainability</h3>
+              <p>Use points to buy eco-friendly products.</p>
+            </div>
+          </div>
+        </div>
+        <section class="section-book">
+          <div class="book">
+            <div class="book-form">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="form"
+              >
+                <div class="section-book-heading">
+                  <h3 class="section-book-heading-3">Contact Us</h3>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="name"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form-label">Full-name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="E-mail"
+                    class="form-input"
+                    placeholder="E-mail Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form-label">E-mail</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="description"
+                    placeholder="Explain in details(optional)"
+                    id="desc"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="1be29a43-0535-4b29-9e5c-514e3826b887"
+                />
+                <button type="submit" class="viewall link">
+                  Submit <label class="icon">→</label>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Authentication Section -->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #059669;
+}
+
+.store-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #059669;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.store-button:hover {
+  background: #047857;
+}
+
+.store-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Main Content */
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Cards */
+.welcome-card,
+.stat-card,
+.progress-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-card h1 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-card p {
+  color: #4b5563;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card .stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stat-header span {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.trophy-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #eab308;
+}
+
+.recycle-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #059669;
+}
+
+.points-icon {
+  width: 2rem;
+  height: 2rem;
+  background: #f3e8ff;
+  color: #7e22ce;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.stat-card h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.stat-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Progress Bar */
+.progress-card h2 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 1rem;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #059669;
+  border-radius: 9999px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Achievements Section */
+.achievements-section {
+  margin-top: 2rem;
+}
+
+.achievements-section h2 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.badge-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.badge-card.inactive {
+  opacity: 0.5;
+}
+
+.badge-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 0.75rem;
+}
+
+.badge-card h3 {
+  font-size: 1rem;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.badge-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .badges-grid {
+    grid-template-columns: 1fr;
+  }
+}
