@@ -6,7 +6,7 @@ const userroutes = require("./routes/user");
 
 const app = express();
 const MONGODB_URI =
-  "mongodb+srv://hiteshkanisetty:Hitu9866@cluster0.1jtqd5a.mongodb.net/object_detection?retryWrites=true&w=majority&appName=cluster-stud";
+  "mongodb+srv://duvvuruvarundonesh:cHinnu54321@varundonesh.3ys9c.mongodb.net/?retryWrites=true&w=majority&appName=VarunDonesh";
 const port = 3000;
 app.set("view engine", "ejs");
 app.set("views", "views");
