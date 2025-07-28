@@ -5,8 +5,7 @@ const path = require("path");
 const userroutes = require("./routes/user");
 
 const app = express();
-const MONGODB_URI =
-  "mongodb+srv://duvvuruvarundonesh:cHinnu54321@varundonesh.3ys9c.mongodb.net/?retryWrites=true&w=majority&appName=VarunDonesh";
+const MONGODB_URI =// "your database URL" //;
 const port = 3000;
 app.set("view engine", "ejs");
 app.set("views", "views");
