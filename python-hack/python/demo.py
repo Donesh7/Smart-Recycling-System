@@ -24,7 +24,7 @@ socketio = SocketIO(app, async_mode='gevent', cors_allowed_origins="http://local
 # MongoDB connection with SSL/TLS
 try:
     client = MongoClient(
-        "mongodb+srv://duvvuruvarundonesh:cHinnu54321@varundonesh.3ys9c.mongodb.net/?retryWrites=true&w=majority&appName=VarunDonesh",
+        # " your database url" ,
         tls=True,  
         tlsAllowInvalidCertificates=True 
     )
